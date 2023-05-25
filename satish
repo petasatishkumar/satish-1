@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	char str[100];
+	int i,lcnt,scnt;
+	scanf("%[^\n]",str);
+	i=0;
+	lcnt=scnt=0;
+	while(str[i]!='\0')
+	{
+		if(str[i]>='a' && str[i]<='z')
+		lcnt++;
+		else
+		if(str[i]!=' ')
+		scnt++;
+		i++;
+	}
+	printf("%d",lcnt);
+	printf("\n%d",scnt);
+}
